@@ -21,11 +21,11 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', 'Quicksand', sans-serif;
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
@@ -39,29 +39,23 @@ body {
 
 /* Типографика */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Quicksand', 'Nunito', sans-serif;
     font-weight: 700;
     line-height: 1.2;
 }
 
-/* Шапка - Современный дизайн с фоном */
+/* Шапка - Серый фон */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background:
-        linear-gradient(to right, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
-        url(images/header-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #1d0202;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
     z-index: 1000;
-    transition: var(--transition);
-    border-bottom: 1px solid rgba(233, 30, 99, 0.1);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .header::before {
@@ -88,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 0.8rem;
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--dark-color);
+    color: var(--white);
     text-decoration: none;
     transition: var(--transition);
 }
@@ -99,7 +93,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo-icon {
     font-size: 2.5rem;
-    filter: drop-shadow(0 2px 4px rgba(233, 30, 99, 0.3));
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8))
+            drop-shadow(0 0 20px rgba(255, 105, 180, 0.6))
+            drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     animation: float 3s ease-in-out infinite;
 }
 
@@ -110,12 +106,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo-text {
     font-family: 'Dancing Script', cursive;
-    background: linear-gradient(135deg, var(--primary-color), var(--gold));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--white);
     font-size: 2rem;
     letter-spacing: 1px;
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.7))
+            drop-shadow(0 0 15px rgba(255, 105, 180, 0.5))
+            drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .nav-menu {
@@ -125,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link {
-    color: var(--text-color);
+    color: var(--white);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
@@ -162,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--gold);
     transform: translateY(-2px);
 }
 
@@ -192,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: var(--transition);
 }
 
-/* Главный экран - Современный дизайн с фоном */
+/* Главный экран - С фоновым изображением */
 .hero {
     position: relative;
     height: 100vh;
@@ -200,16 +196,9 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     background:
-        linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(194, 24, 91, 0.85) 100%),
+        linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%),
         url('./images/photo-1490750967868-88aa4486c946.jpg') center/cover no-repeat;
     overflow: hidden;
-}
-
-/* Запасной вариант, если изображение не загружено */
-.hero:not([style*="background-image"]) {
-    background:
-        linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(194, 24, 91, 0.85) 100%),
-        linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .hero::before {
@@ -274,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-subtitle {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.4rem;
     margin-bottom: 2.5rem;
     font-weight: 300;
@@ -295,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
     display: inline-block;
     padding: 1.1rem 2.5rem;
-    border-radius: 50px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);
@@ -762,7 +751,7 @@ section {
     border: 2px solid #e0e0e0;
     border-radius: 10px;
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     transition: var(--transition);
 }
 
@@ -778,7 +767,7 @@ textarea.form-input {
 
 /* Футер */
 .footer {
-    background: var(--dark-color);
+    background: #280c0cea;
     color: var(--white);
     padding: 3rem 0 1rem;
 }
@@ -915,6 +904,14 @@ textarea.form-input {
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .nav-menu .nav-link {
+        color: var(--text-color);
+    }
+
+    .nav-menu .nav-link:hover {
+        color: var(--primary-color);
     }
 
     .burger-menu {

@@ -461,20 +461,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 16);
     }
 
-    // ========== Эффект параллакса для hero-секции ==========
-    const hero = document.querySelector('.hero');
-    
-    if (hero) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const heroContent = hero.querySelector('.hero-content');
-            
-            if (scrolled < window.innerHeight) {
-                heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
-                heroContent.style.opacity = 1 - (scrolled / window.innerHeight);
-            }
-        });
-    }
+    // ========== Эффект параллакса отключен ==========
+    // Параллакс эффект убран для статичного отображения
 
     // ========== Добавление класса для загруженной страницы ==========
     document.body.classList.add('loaded');

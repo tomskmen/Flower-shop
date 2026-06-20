@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Свежие цветы с доставкой. Букеты на любой вкус и бюджет.">
+    <title>Цветочный магазин - Свежие цветы с доставкой</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <span class="logo-icon">🌸</span>
+                    <span class="logo-text">Flower Shop</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Главная</a></li>
+                    <li><a href="#catalog" class="nav-link">Каталог</a></li>
+                    <li><a href="#about" class="nav-link">О нас</a></li>
+                    <li><a href="#delivery" class="nav-link">Доставка</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+                <button class="burger-menu" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Свежие цветы для особенных моментов</h1>
+                <p class="hero-subtitle">Создаём букеты с любовью и доставляем по всему городу</p>
+                <div class="hero-buttons">
+                    <a href="#catalog" class="btn btn-primary">Выбрать букет</a>
+                    <a href="#contacts" class="btn btn-secondary">Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3 class="feature-title">Быстрая доставка</h3>
+                    <p class="feature-text">Доставим букет в течение 2 часов по городу</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌹</div>
+                    <h3 class="feature-title">Свежие цветы</h3>
+                    <p class="feature-text">Работаем только со свежими цветами от проверенных поставщиков</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💐</div>
+                    <h3 class="feature-title">Индивидуальный подход</h3>
+                    <p class="feature-text">Создадим букет по вашим пожеланиям</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3 class="feature-title">Удобная оплата</h3>
+                    <p class="feature-text">Наличными или картой при получении</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Каталог -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <h2 class="section-title">Наши букеты</h2>
+            <p class="section-subtitle">Выберите идеальный букет для любого случая</p>
+            
+            <div class="catalog-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Хит</div>
+                        <div class="product-img-placeholder" style="background: url('./images/1752088606_44118320.jpg') center/cover no-repeat;">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Романтика</h3>
+                        <p class="product-description">Букет из красных и розовых роз - классика для выражения чувств</p>
+                        <div class="product-footer">
+                            <span class="product-price">2 500 ₽</span>
+                            <button class="btn btn-small btn-primary">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-img-placeholder" style="background: url('./images/img_3469-1000x1778.jpeg') center/cover no-repeat;">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Солнечное настроение</h3>
+                        <p class="product-description">Яркий букет из подсолнухов и хризантем</p>
+                        <div class="product-footer">
+                            <span class="product-price">1 800 ₽</span>
+                            <button class="btn btn-small btn-primary">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Новинка</div>
+                        <div class="product-img-placeholder" style="background: url('./images/photo_2025-03-03_23-57-40-1024x1024.jpg') center/cover no-repeat;">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Весенняя нежность</h3>
+                        <p class="product-description">Нежный букет из тюльпанов и фрезий</p>
+                        <div class="product-footer">
+                            <span class="product-price">2 200 ₽</span>
+                            <button class="btn btn-small btn-primary">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-img-placeholder" style="background: url('./images/4180_1.jpg') center/cover no-repeat;">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Экзотика</h3>
+                        <p class="product-description">Букет из орхидей и экзотических цветов</p>
+                        <div class="product-footer">
+                            <span class="product-price">3 500 ₽</span>
+                            <button class="btn btn-small btn-primary">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-img-placeholder" style="background: url('./images/7159.970.jpeg') center/cover no-repeat;">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Полевые цветы</h3>
+                        <p class="product-description">Очаровательный букет в стиле рустик</p>
+                        <div class="product-footer">
+                            <span class="product-price">1 500 ₽</span>
+                            <button class="btn btn-small btn-primary">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Хит</div>
+                        <div class="product-img-placeholder" style="background: url('./images/images.jpg') center/cover no-repeat;">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Персиковый рассвет</h3>
+                        <p class="product-description">Нежный букет в персиковых тонах</p>
+                        <div class="product-footer">
+                            <span class="product-price">2 000 ₽</span>
+                            <button class="btn btn-small btn-primary">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">О нашем магазине</h2>
+                    <p class="about-description">
+                        Мы - команда профессиональных флористов с более чем 10-летним опытом работы. 
+                        Наша миссия - дарить радость и создавать незабываемые моменты через красоту цветов.
+                    </p>
+                    <p class="about-description">
+                        Каждый букет мы создаём с любовью и вниманием к деталям, используя только 
+                        свежие цветы от лучших поставщиков. Мы гордимся тем, что помогаем нашим 
+                        клиентам выражать свои чувства через язык цветов.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">лет опыта</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label">довольных клиентов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">свежие цветы</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-img-placeholder">
+                        <span class="placeholder-icon">🌸</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Доставка -->
+    <section id="delivery" class="delivery">
+        <div class="container">
+            <h2 class="section-title">Доставка и оплата</h2>
+            <div class="delivery-grid">
+                <div class="delivery-card">
+                    <div class="delivery-icon">📍</div>
+                    <h3 class="delivery-title">Зона доставки</h3>
+                    <p class="delivery-text">Доставляем по всему городу и ближайшим пригородам</p>
+                </div>
+                <div class="delivery-card">
+                    <div class="delivery-icon">⏰</div>
+                    <h3 class="delivery-title">Время доставки</h3>
+                    <p class="delivery-text">Экспресс-доставка за 2 часа или в удобное для вас время</p>
+                </div>
+                <div class="delivery-card">
+                    <div class="delivery-icon">💰</div>
+                    <h3 class="delivery-title">Стоимость</h3>
+                    <p class="delivery-text">Бесплатная доставка при заказе от 3000 ₽</p>
+                </div>
+                <div class="delivery-card">
+                    <div class="delivery-icon">💳</div>
+                    <h3 class="delivery-title">Способы оплаты</h3>
+                    <p class="delivery-text">Наличными курьеру, картой онлайн или при получении</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы наших клиентов</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">
+                        "Заказывала букет для мамы на день рождения. Цветы пришли свежие, 
+                        красиво оформленные. Мама была в восторге! Спасибо!"
+                    </p>
+                    <div class="review-author">Анна К.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">
+                        "Отличный сервис! Доставили точно в срок, букет превзошёл все ожидания. 
+                        Обязательно буду заказывать ещё!"
+                    </p>
+                    <div class="review-author">Дмитрий С.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">
+                        "Профессиональные флористы, которые знают своё дело. Помогли подобрать 
+                        идеальный букет для свадьбы. Рекомендую!"
+                    </p>
+                    <div class="review-author">Елена М.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Телефон</h3>
+                            <a href="tel:+79001234567">+7 (900) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:info@flowershop.ru">info@flowershop.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Адрес</h3>
+                            <p>г. Москва, ул. Цветочная, д. 15</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-details">
+                            <h3>Режим работы</h3>
+                            <p>Ежедневно с 9:00 до 21:00</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <h3 class="form-title">Оставьте заявку</h3>
+                    <input type="text" name="name" placeholder="Ваше имя" required class="form-input">
+                    <input type="tel" name="phone" placeholder="Телефон" required class="form-input">
+                    <input type="email" name="email" placeholder="Email" class="form-input">
+                    <textarea name="message" placeholder="Сообщение" rows="4" class="form-input"></textarea>
+                    <button type="submit" class="btn btn-primary btn-full">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-icon">🌸</span>
+                        <span class="logo-text">Flower Shop</span>
+                    </div>
+                    <p class="footer-text">Создаём красоту и дарим радость с 2015 года</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#delivery">Доставка</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+79001234567">+7 (900) 123-45-67</a></li>
+                        <li><a href="mailto:info@flowershop.ru">info@flowershop.ru</a></li>
+                        <li>г. Москва, ул. Цветочная, д. 15</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="VK">🔵</a>
+                        <a href="#" class="social-link" aria-label="Telegram">✈️</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Flower Shop. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

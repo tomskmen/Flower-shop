@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка изображений для Flower Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #e91e63;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .description {
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .image-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-preview {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+
+        .image-info {
+            padding: 1.5rem;
+        }
+
+        .image-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .image-description {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 0.8rem;
+            background: linear-gradient(135deg, #e91e63, #c2185b);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .instructions {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .instructions h3 {
+            color: #e65100;
+            margin-bottom: 1rem;
+        }
+
+        .instructions ol {
+            margin-left: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .instructions li {
+            margin-bottom: 0.5rem;
+        }
+
+        .note {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 1rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌸 Загрузка изображений для Flower Shop</h1>
+        <p class="description">
+            Ниже представлены прямые ссылки на качественные бесплатные изображения с Unsplash. 
+            Нажмите на кнопку "Скачать", чтобы загрузить изображение, затем сохраните его в папку <strong>images/</strong> 
+            с соответствующим названием.
+        </p>
+
+        <div class="instructions">
+            <h3>📋 Инструкция по загрузке:</h3>
+            <ol>
+                <li>Нажмите на кнопку "Скачать" под нужным изображением</li>
+                <li>Изображение откроется в новой вкладке</li>
+                <li>Нажмите правой кнопкой мыши → "Сохранить изображение как..."</li>
+                <li>Сохраните в папку <code>images/</code> с указанным названием файла</li>
+                <li>Повторите для всех изображений</li>
+            </ol>
+        </div>
+
+        <div class="images-grid">
+            <!-- Hero Background -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1920&h=1080&fit=crop" 
+                     alt="Hero Background" 
+                     class="image-preview">
+                <div class="image-info">
+                    <div class="image-title">Фон главного экрана</div>
+                    <div class="image-description">Красивый букет цветов для hero-секции</div>
+                    <a href="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1920&h=1080&fit=crop&q=90" 
+                       target="_blank" 
+                       class="download-btn"
+                       download="hero-bg.jpg">
+                        Скачать → hero-bg.jpg
+                    </a>
+                </div>
+            </div>
+
+            <!-- About Image -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?w=800&h=600&fit=crop" 
+                     alt="About Image" 
+                     class="image-preview">
+                <div class="image-info">
+                    <div class="image-title">Секция "О нас"</div>
+                    <div class="image-description">Флорист за работой</div>
+                    <a href="https://images.unsplash.com/photo-1487070183336-b863922373d4?w=800&h=600&fit=crop&q=90" 
+                       target="_blank" 
+                       class="download-btn"
+                       download="about-image.jpg">
+                        Скачать → about-image.jpg
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 1 - Roses -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=600&h=600&fit=crop" 
+                     alt="Red Roses" 
+                     class="image-preview">
+                <div class="image-info">
+                    <div class="image-title">Букет "Романтика"</div>
+                    <div class="image-description">Красные розы</div>
+                    <a href="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=600&h=600&fit=crop&q=90" 
+                       target="_blank" 
+                       class="download-btn"
+                       download="product-1.jpg">
+                        Скачать → product-1.jpg
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 2 - Sunflowers -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1597848212624-e530bb4d0c0e?w=600&h=600&fit=crop" 
+                     alt="Sunflowers" 
+                     class="image-preview">
+                <div class="image-info">
+                    <div class="image-title">Букет "Солнечное настроение"</div>
+                    <div class="image-description">Подсолнухи</div>
+                    <a href="https://images.unsplash.com/photo-1597848212624-e530bb4d0c0e?w=600&h=600&fit=crop&q=90" 
+                       target="_blank" 
+                       class="download-btn"
+                       download="product-2.jpg">
+                        Скачать → product-2.jpg
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 3 - Tulips -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=600&h=600&fit=crop" 
+                     alt="Tulips" 
+                     class="image-preview">
+                <div class="image-info">
+                    <div class="image-title">Букет "Весенняя нежность"</div>
+                    <div class="image-description">Тюльпаны</div>
+                    <a href="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=600&h=600&fit=crop&q=90" 
+                       target="_blank" 
+                       class="download-btn"
+                       download="product-3.jpg">
+                        Скачать → product-3.jpg
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 4 - Orchids -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?w=600&h=600&fit=crop" 
+                     alt="Orchids" 
+                     class="image-preview">
+                <div class="image-info">
+                    <div class="image-title">Букет "Экзотика"</div>
+                    <div class="image-description">Орхидеи</div>
+                    <a href="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?w=600&h=600&fit=crop&q=90" 
+                       target="_blank" 
+                       class="download-btn"
+                       download="product-4.jpg">
+                        Скачать → product-4.jpg
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 5 - Wildflowers -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=600&h=600&fit=crop" 
+                     alt="Wildflowers" 
+                     class="image-preview">
+                <div class="image-info">
+                    <div class="image-title">Букет "Полевые цветы"</div>
+                    <div class="image-description">Полевые цветы</div>
+                    <a href="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=600&h=600&fit=crop&q=90" 
+                       target="_blank" 
+                       class="download-btn"
+                       download="product-5.jpg">
+                        Скачать → product-5.jpg
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 6 - Peach Bouquet -->
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=600&h=600&fit=crop" 
+                     alt="Peach Bouquet" 
+                     class="image-preview">
+                <div class="image-info">
+                    <div class="image-title">Букет "Персиковый рассвет"</div>
+                    <div class="image-description">Нежные персиковые цветы</div>
+                    <a href="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=600&h=600&fit=crop&q=90" 
+                       target="_blank" 
+                       class="download-btn"
+                       download="product-6.jpg">
+                        Скачать → product-6.jpg
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>💡 Совет:</strong> После загрузки всех изображений обновите страницу index.html в браузере, 
+            чтобы увидеть сайт с реальными фотографиями вместо градиентных заглушек!
+        </div>
+    </div>
+</body>
+</html>
